@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche d'Images - SearchArea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><img src="logosearchimages.png"></h1>
+        <form id="searchForm" action="search_images.php" method="GET">
+            <input type="text" name="query" id="query" placeholder="Rechercher des images..." required>
+            <button type="submit">Rechercher</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <center><p>Service en BETA, <a href="https://searcharea.ddns.net/contact/index.php">Signaler un bug</a></p></center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
